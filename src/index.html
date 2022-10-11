@@ -2,13 +2,42 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Caesar Cipher - Lorena Guillen</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+
+    <section class="formulario">
+
+      <h1>Hello Strange!!</h1>
+      <h3>Llegaste aquí por tus habilidades de detective.</h3>
+      <p>A partir de ahora serás una agente secreta, por ello debes codificar tu nombre.</p>
+
+      <!-- Casilla para insertar el nombre que deseamos cifrar -->
+        <input type="text" id="string" placeholder="Nombre actual"><br><br>
+
+      <!-- Casilla para elegir la cantidad de números que correrá nuestro código -->
+      <div class="offset">
+        <input id="offset" type="number" name="offset" min="1" max="26" step="1" placeholder="0">
+      </div><br>
+
+      <!-- Botones de cifrado y descifrado -->
+        <input type="button" id="encode" value="ENCODE">
+        <input type="button" id="decode" value="DECODE">
+
+      <!-- Casilla que arrojará el nombre cifrado -->
+      <p>Pero nunca olvides quién eres!!! ¿Quieres recordar tu nombre?</p>
+        <input type="text" id="string2" placeholder="Código secreto">
+        
+
+    </section>
+  
+  
+  
+  
+  
+  
     <script src="index.js" type="module"></script>
   </body>
 </html>
+ 
