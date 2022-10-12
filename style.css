@@ -1,0 +1,36 @@
+body {
+    background-image: url("Fondo1.jpg");
+}
+
+.formulario {
+    width: 370px;
+    background:rgb(196, 113, 2452);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px 5px 5px 5px;
+    border-color: rgb(50, 2, 96) blueviolet rgb(50, 2, 96) blueviolet;
+}
+
+.formulario h1 {
+    color: yellow;
+    font-size: 45px;
+    text-align: center;
+}
+
+#string {
+    padding: 7px;
+
+}
+
+#string2 {
+    padding: 7px;
+
+}
+
+
+
