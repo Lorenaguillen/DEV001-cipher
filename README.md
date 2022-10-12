@@ -1,21 +1,21 @@
-#Caesar Cipher - Lorena Guillen
+# Caesar Cipher - Lorena Guillen
 
-##1. Descripción
+## 1. Descripción
 Caesar Cipher - Lorena Guillen, fue creado para todas las super detectives que quieren completar sus misiones pero pasar desapercibidas.
 [Ingresa a la web](https://lorenaguillen.github.io/DEV001-cipher/ "Ingresa a la web")
 
-##2. Principales Usuarios
+## 2. Principales Usuarios
 Las principales usuarias son todas esas agentes secretas que se dedican a resolver y descubrir los casos más complicados.
 
-##3. Objetivos del Usuario en relación a Caesar Cipher - Lorena Guillen
+## 3. Objetivos del Usuario en relación a Caesar Cipher - Lorena Guillen
 Con este sistema tendrás infinitas posibilidades para cambiar tu nombre. Nadie podrá localizarte jamás, ya que tendrás la posibilidad de generar muchas combinaciones todos los días.
 No te asustes si al cambiarlo tantas veces ya no recuerdes tu verdadero nombre, ya que tendrás la posibilidad de decodificarlo. El programa te permitirá ejecutar esta funcionalidad todas las veces que quieras.
 
-##4. Cómo resuelve los problemas del Usuario
+## 4. Cómo resuelve los problemas del Usuario
 Caesar Cipher resolverá todos tus problemas, ya que es un sistema gratuito, sencillo y seguro.
 No creas que por ser gratuito es vulnerable, todo lo contrario. Fue creado exclusivamente para todas las guerreras que demuestren tener grandes habilidades de espionaje. No cualquiera podrá utilizarlo, solo quienes pasen todas las pruebas previas.
 
-##5.1 Javascript - cipher.js
+## 5.1 Javascript - cipher.js
 
 ```Javascript
 const cipher = {
@@ -59,7 +59,7 @@ const cipher = {
 export default cipher;
 ```
 
-##5.2 Javascript - index.js
+## 5.2 Javascript - index.js
 
 ```Javascript
 import cipher from './cipher.js';
@@ -83,7 +83,7 @@ document.getElementById("decode").addEventListener("click", function () {
 }, true);
 ```
 
-##6. HTML Code
+## 6. HTML Code
 ```HTMLCode
 <!DOCTYPE html>
 <html>
@@ -125,7 +125,7 @@ document.getElementById("decode").addEventListener("click", function () {
 </html>
 ```
 
-##7. CSS
+## 7. CSS
 ```CSS
 
 body {
@@ -160,7 +160,7 @@ body {
 ```
 
 
-##8. Imagen de fondo utilizada
+## 8. Imagen de fondo utilizada
 Image:
 ![](https://img.freepik.com/vector-premium/detective-patrones-fisuras-boceto-dibujado-mano-fondo-crimen-estilo-doodle-huella-huella-digital-patron-investigacion-detective-lupa-ilustracion-vectorial_253081-910.jpg?w=2000)
 >Fondo detective
