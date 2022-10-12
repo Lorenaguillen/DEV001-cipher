@@ -1,3 +1,176 @@
+#Caesar Cipher - Lorena Guillen
+
+##1. Descripción
+Caesar Cipher - Lorena Guillen, fue creado para todas las super detectives que quieren completar sus misiones pero pasar desapercibidas.
+[Ingresa a la web](https://lorenaguillen.github.io/DEV001-cipher/ "Ingresa a la web")
+
+##2. Principales Usuarios
+Las principales usuarias son todas esas agentes secretas que se dedican a resolver y descubrir los casos más complicados.
+
+##3. Objetivos del Usuario en relación a Caesar Cipher - Lorena Guillen
+Con este sistema tendrás infinitas posibilidades para cambiar tu nombre. Nadie podrá localizarte jamás, ya que tendrás la posibilidad de generar muchas combinaciones todos los días.
+No te asustes si al cambiarlo tantas veces ya no recuerdes tu verdadero nombre, ya que tendrás la posibilidad de decodificarlo. El programa te permitirá ejecutar esta funcionalidad todas las veces que quieras.
+
+##4. Cómo resuelve los problemas del Usuario
+Caesar Cipher resolverá todos tus problemas, ya que es un sistema gratuito, sencillo y seguro.
+No creas que por ser gratuito es vulnerable, todo lo contrario. Fue creado exclusivamente para todas las guerreras que demuestren tener grandes habilidades de espionaje. No cualquiera podrá utilizarlo, solo quienes pasen todas las pruebas previas.
+
+##5.1 Javascript - cipher.js
+
+```Javascript
+const cipher = {
+
+  encode: function (offset, string) {
+    
+    if (typeof offset !== "number" || offset == 0) throw new TypeError("Debes ingresar caracteres permitidos");
+    if (typeof string !== "string" || string == "") throw new TypeError("Debes ingresar todos los parámetros");
+    let resultado = "";
+
+
+    for (let i = 0; i < string.length; i++) {
+      let x = string.charCodeAt(i);
+
+      if (x >= 65 && x <= 90) {
+
+      resultado += String.fromCharCode(((x - 65 + offset) % 26) + 65);
+     
+      }
+
+      else {
+        resultado += string.charAt(i);
+      }
+
+    }
+
+    return resultado;
+
+  },
+
+  decode: function (offset, string) {
+    let resultado = "";
+
+    offset = ((26 - offset) % 26) + 26;
+    resultado = this.encode(offset, string);
+    return resultado
+
+  }
+
+}
+export default cipher;
+```
+
+##5.2 Javascript - index.js
+
+```Javascript
+import cipher from './cipher.js';
+
+document.getElementById("string").addEventListener("keyup", function () {
+    this.value = this.value.toUpperCase();
+}, true);
+
+document.getElementById("encode").addEventListener("click", function () {
+    let string = document.getElementById("string").value;
+    let offset = document.getElementById("offset").value;
+    let letras = parseInt(offset);
+    document.getElementById("string2").value = cipher.encode(letras, string);
+}, true);
+
+document.getElementById("decode").addEventListener("click", function () {
+    let string = document.getElementById("string").value;
+    let offset = document.getElementById("offset").value;
+    let letras = parseInt(offset);
+    document.getElementById("string2").value = cipher.decode(letras, string);
+}, true);
+```
+
+##6. HTML Code
+```HTMLCode
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher - Lorena Guillen</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <section class="formulario">
+
+      <h1>Hello Strange!!</h1>
+      <h3>Llegaste aquí por tus habilidades de detective.</h3>
+      <p>A partir de ahora serás una agente secreta, por ello debes codificar tu nombre.</p>
+
+        <input type="text" id="string" placeholder="Nombre actual"><br><br>
+
+      <div class="offset">
+        <input id="offset" type="number" name="offset" min="1" max="26" step="1" placeholder="0">
+      </div><br>
+
+        <input type="button" id="encode" value="ENCODE">
+        <input type="button" id="decode" value="DECODE">
+
+      <p>Pero nunca olvides quién eres!!! ¿Quieres recordar tu nombre?</p>
+        <input type="text" id="string2" placeholder="Código secreto">
+        
+
+    </section>
+  
+  
+  
+  
+  
+  
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
+```
+
+##7. CSS
+```CSS
+
+body {
+    background-image: url("Fondo1.jpg");
+}
+
+.formulario {
+    width: 370px;
+    background:rgb(196, 113, 2452);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px 5px 5px 5px;
+    border-color: rgb(50, 2, 96) blueviolet rgb(50, 2, 96) blueviolet;
+}
+
+.formulario h1 {
+    color: yellow;
+    font-size: 45px;
+    text-align: center;
+}
+
+#string {
+    padding: 7px;
+
+}
+
+```
+
+
+##8. Imagen de fondo utilizada
+Image:
+![](https://img.freepik.com/vector-premium/detective-patrones-fisuras-boceto-dibujado-mano-fondo-crimen-estilo-doodle-huella-huella-digital-patron-investigacion-detective-lupa-ilustracion-vectorial_253081-910.jpg?w=2000)
+>Fondo detective
+
+
+####Fin README: Caesar Cipher - Lorena Guillen
+
+
+
+
 # Cifrado César
 
 ## Índice
